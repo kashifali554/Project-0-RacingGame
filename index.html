@@ -7,7 +7,14 @@
     <!-- set viewport to device width to allow responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- Bootstrap CDN -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+
+	<!-- style.css link -->
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	
 	<!-- Jquery CDN -->
 	<script
 	src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -20,20 +27,15 @@
 	<!-- app.js link -->
 	<script src="script/app.js"></script>
 
-	<!-- Bootstrap CDN -->
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<!-- style.css link -->
-	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<title>Racing Game</title>
+	<title>Space Racing</title>
 </head>
 
 <body>
 <div class="container">
 	<div class="row text-center">
 		<div class="col-md-12">
-        	<h1>Racing Game</h1>
+        	<h1>Space Racing</h1>
           	<hr>
         </div>
     </div>
@@ -41,25 +43,35 @@
     <!-- <div class="col-md-offset-12" id="board"> -->
     	<!-- div row -->
     	<div class="row" id="trackOne">
-       		<!-- 12 single col div to create 12 steps to start the race and finish -->
-			<div class="col-md-1"> <img src="imges/rocket.png" class="playerOne"></div>
-			<div class="col-md-1"></div>
-			<div class="col-md-1"></div>
-			<div class="col-md-1"></div>
-			<div class="col-md-1"></div>
-			<div class="col-md-1"></div>
-			<div class="col-md-1"></div>
-			<div class="col-md-1"></div>
-			<div class="col-md-1"></div>
-			<div class="col-md-1"></div>
-			<div class="col-md-1"></div>
-			<div class="col-md-1"></div>
+    		<div class="col-md-1 player1"> <img src="imges/playerOne.png"></div>
+       		<!-- 12 single col div to create 12 steps to start the race and finish TrackOne-->
+			<!-- 
+			<div class="col-md-1" id="box1"></div>
+			<div class="col-md-1" id="box2"></div>
+			<div class="col-md-1" id="box3"></div>
+			<div class="col-md-1" id="box4"></div>
+			<div class="col-md-1" id="box5"></div>
+			<div class="col-md-1" id="box6"></div>
+			<div class="col-md-1" id="box7"></div>
+			<div class="col-md-1" id="box8"></div>
+			<div class="col-md-1" id="box9"></div>
+			<div class="col-md-1" id="box10"></div>
+			<div class="col-md-1" id="box11"></div>
+			<div class="col-md-1" id="box12"></div> 
+			-->
 			<!-- end of row div -->
     	</div>
 
-    	    	<div class="row" id="tracTwo">
-       		<!-- 12 single col div to create 12 steps to start the race and finish -->
-			<div class="col-md-1"> <img src="imges/rocket.png" class="playerOne"></div>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+
+		<div class="row" id="trackTwo">
+		<div class="col-md-1 player2"> <img src="imges/playerTwo.png"> </div>
+       		<!-- 12 single col div to create 12 steps to start the race and finish. TrackTwo -->
+			<!-- 		
 			<div class="col-md-1"></div>
 			<div class="col-md-1"></div>
 			<div class="col-md-1"></div>
@@ -71,7 +83,9 @@
 			<div class="col-md-1"></div>
 			<div class="col-md-1"></div>
 			<div class="col-md-1"></div>
-			<!-- end of row div -->
+			<div class="col-md-1"></div> 
+			-->
+			<!-- end of Track Two -->
     	</div>
    	<!-- End of board div -->
  	<!-- </div> -->
