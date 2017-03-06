@@ -1,12 +1,20 @@
 $(document).ready(function () {
 	console.log("Document ready is working");
 
+	var screenWidth = ($(window).width()-200);
+  	console.log('screenWidth '+screenWidth);
 
 	moveRight();
 
-	function countDown(){
-		
-	}
+	// function countDown(){
+	// 	$("body").keydown(function(event){
+	// 		event.preventDefault();
+	// 		if(event.which === 32){
+	// 			var result = [];
+	// 			result.
+	// 		}
+	// 	})	
+	// }
 
 	function moveRight(){
 		$( "body" ).keydown(function( event ) {
@@ -23,12 +31,6 @@ $(document).ready(function () {
 			}
 		});
 	}
-	// $('.playerOne').on('click', function(){
-	// 	$('.playerOne').animate({right: "+=20px"}, 0)
-
-	// })
-
-	// $("body").animate({left: "+=50px"}, 0);
 
 	// $('#playerOne').keydown(function(event) {
 	//   if ( event.which === 83 || event.which === 115 ) {
