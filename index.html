@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+	<title>Space Racing</title>
+
 	<meta charset="utf-8">
 
     <!-- set viewport to device width to allow responsiveness -->
@@ -27,8 +28,6 @@
 	<!-- app.js link -->
 	<script src="script/app.js"></script>
 
-
-	<title>Space Racing</title>
 </head>
 
 <body>
@@ -39,23 +38,28 @@
           	<hr>
         </div>
     </div>
-    	<!-- div track -->
-	<div class="row" id="trackOne">
-		<div class="col-md-1 player1"> 
-			<img src="imges/playerOne.png">
-		</div>
-		<!-- end of track one div -->
-	</div>
 
-	<br>
-	<br>
-	<br>
-    	<!-- Track Two -->
-	<div class="row" id="trackTwo">
-		<div class="col-md-1 player2"> 
-			<img src="imges/playerTwo.png"> 
+	<!-- Start of race track container  -->
+    <div class="container" id="second">
+	    <!-- Track One -->
+		<div class="row" id="trackOne">
+			<div class="col-md-1 player1" id="img1"> 
+				<img src="imges/playerOne.png" alt="Player One">
+			</div>
+		<!-- end of track one div -->
 		</div>
+
+		<br>
+		<br>
+		<br>
+	    <!-- Track Two -->
+		<div class="row" id="trackTwo">
+			<div class="col-md-1 player2" id="img2"> 
+				<img src="imges/playerTwo.png" alt="Player Two"> 
+			</div>
 		<!-- end of Track Two -->
+		</div>
+	<!-- End of race tracks container -->
 	</div>
 
 	<br>

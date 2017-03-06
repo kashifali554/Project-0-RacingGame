@@ -1,5 +1,5 @@
 body {
-	background-image: url("../imges/luner.jpg");
+	background-image: url("../imges/lunar.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family: Verdana, Times, serif;
@@ -14,16 +14,24 @@ img {
 }
 
 #trackOne {
-	position: relative;
+	/*width: 1000px;*/
 	height: 150px;
-	/*border: solid black 2px;*/
+	/*background: black;*/
 }
 
 #trackTwo {
-	position: relative;
+	/*width: 1000px;*/
 	height: 150px;
-	/*border: white solid 2px;*/
+	/*background-color: red;*/
 }
+
+/*#second {
+	background-color: white;
+}*/
+
+/*#img1, #img2 {
+	background-color: yellow;
+}*/
 
 p {
 	color: white;

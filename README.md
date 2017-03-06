@@ -21,3 +21,6 @@ Restart button added and function reload also added to reset the game board.
 
 Sixth commit(Win function and clean up);
 Set few wining conditions to track the position of img(rocket) and at curtain point announce the winner or tie. but this function is not working so far. Also removed redundant code.
+
+Last comment for today (Working winConditions):
+Wining conditions are very straight forward and easy. winConditions function track the position and at the end of screen width decides the winner. But every time I tried the game rockets break the container and row's and go far right on page. For a while, I thought it's some sort of div bug. I tried to fix div size but in vain. After 3 hours I invoked the winConditions() inside moveRight function and boooom, win logic is working.
