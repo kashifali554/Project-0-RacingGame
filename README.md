@@ -12,3 +12,6 @@ Created an event listner for both tracks. For now k is the press key for player 
 
 Third push comment:
 I have changed the whole game logic, I was thinking to GET the col-md-1 as an array and use for or forEach loop to itriate through the col-md-1 array but it gives back the object. So, I am trying to create animation logic. Just only one row, and GETing player1 class via jquery and moving player1 div class. Next, Define the wining function and countdown function.
+
+Fourth comment:
+Added the rest butoon and fixed some padding issues. Also Fixed the width of screen but rockets (img) are still going outside the screen.
