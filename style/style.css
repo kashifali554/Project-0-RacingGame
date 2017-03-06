@@ -2,7 +2,7 @@ body {
 	background-image: url("../imges/luner.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	font-family: "Diplomata-SC"
+	font-family: Verdana, Times, serif;
 }
 
 h1 {
@@ -31,4 +31,6 @@ p {
 	color: white;
 	font-size: 24px;
 	text-align: center;
+	font-family: Verdana, Times, serif;
+	text-shadow: 2px 2px skyblue;
 }

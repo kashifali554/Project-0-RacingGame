@@ -15,3 +15,6 @@ I have changed the whole game logic, I was thinking to GET the col-md-1 as an ar
 
 Fourth comment:
 Added the rest butoon and fixed some padding issues. Also Fixed the width of screen but rockets (img) are still going outside the screen.
+
+Fifit comment (restart button added);
+Restart button added and function reload also added to reset the game board.

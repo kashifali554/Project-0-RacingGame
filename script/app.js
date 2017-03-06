@@ -1,10 +1,16 @@
 $(document).ready(function () {
 	console.log("Document ready is working");
 
+	$(".player1").fadeOut(100).delay(300).show(500);
+	$(".player2").fadeOut(100).delay(300).show(500);
+
 	var screenWidth = ($(window).width()-200);
   	console.log('screenWidth '+screenWidth);
 
+
+
 	moveRight();
+
 
 	// function countDown(){
 	// 	$("body").keydown(function(event){
@@ -23,15 +29,17 @@ $(document).ready(function () {
 			$(".player1").animate({left: "+=20px"}, 0)
 			}
 		});
-
 		$( "body" ).keydown(function( event ) {
 			event.preventDefault();
 		if (event.which === 83 || event.which === 115 ) {
-		$(".player2").animate({left: "+=20px"}, 0)
+			$(".player2").animate({left: "+=20px"}, 0)
 			}
 		});
 	}
 
+		$(".btn").on("click", function(){
+			location.reload();
+		});
 	// $('#playerOne').keydown(function(event) {
 	//   if ( event.which === 83 || event.which === 115 ) {
 	//      event.preventDefault();
