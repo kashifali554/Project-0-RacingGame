@@ -1,27 +1,17 @@
 $(document).ready(function () {
-	console.log("Document ready is working");
 
+	//Animation and sort of sanity check
 	$(".player1").fadeOut(100).delay(300).show(500);
 	$(".player2").fadeOut(100).delay(300).show(500);
 
 	var screenWidth = ($(window).width()-200);
   	console.log('screenWidth '+screenWidth);
 
-
-
 	moveRight();
+	winConditions();
+	reset();
 
-
-	// function countDown(){
-	// 	$("body").keydown(function(event){
-	// 		event.preventDefault();
-	// 		if(event.which === 32){
-	// 			var result = [];
-	// 			result.
-	// 		}
-	// 	})	
-	// }
-
+	//Moving right function with animition and key press.
 	function moveRight(){
 		$( "body" ).keydown(function( event ) {
 			event.preventDefault();
@@ -36,47 +26,26 @@ $(document).ready(function () {
 			}
 		});
 	}
-
-		$(".btn").on("click", function(){
-			location.reload();
-		});
-	// $('#playerOne').keydown(function(event) {
-	//   if ( event.which === 83 || event.which === 115 ) {
-	//      event.preventDefault();
-	//      $('#playerOne').animate({
-	//      	right: "+=50px"
-	//      }, 0);
-	//   }
-	// });
-
-
-	// var PlayerOne = $('img');
-	// // var boxes = $(".col-md-1");
-
-
-	// $("body").keypress(function(event) {
-	//   if (event.which === 75 || event.which === 107) {
-	//      event.preventDefault();
-	//      console.log("Player One Key pressed");
-	//     playerOne.animate({left: "+=50px"}, 0);
-	//   }
-	// });
-
-	// $("body").keypress(function(event) {
-	//   if (event.which === 83 || event.which === 115 ) {
-	//      event.preventDefault();
-	//      console.log("Player Two Key Pressed");
-	//      $("#trackTwo")animate({left: "+=50px"}, 0);
-	//   }
-	// });
-
-	// 	boxes.on("click", function handleClick(){
-	//	boxes.append("This rocket is moving");
-	// 	for (i = 0; i < boxes.length; i++) { 
-	//	console.log(boxes[i]);
-	// }
-
-	// });
+	//Win conditions function to announce the winner.
+	function winConditions(){
+	if (($(".player1").position().left >= screenWidth) &&
+		($(".player2").position().left >= screenWidth)){
+		alert('It is a tie!');
+		window.location.reload(true);
+	} else if($(".player1").position().left >= screenWidth){
+		alert("Player One Wins!");
+		window.location.reload(true);
+	} else if ($(".player2").position().left >= screenWidth) {
+		alert("Player Two Wins!");
+		window.location.reload(true);
+		}
+	}
+	//Reseat button function.
+	function reset(){
+	$(".btn").on("click", function(){
+	location.reload();
+	});
+	}
 
  });
 

@@ -14,17 +14,15 @@ img {
 }
 
 #trackOne {
-	width: 1200px;
+	position: relative;
 	height: 150px;
 	/*border: solid black 2px;*/
-/*	position: relative;*/
-/*	border: black solid 2px;*/
 }
 
 #trackTwo {
-	width: 1200px;
+	position: relative;
 	height: 150px;
-/*	border: white solid 2px;*/
+	/*border: white solid 2px;*/
 }
 
 p {
